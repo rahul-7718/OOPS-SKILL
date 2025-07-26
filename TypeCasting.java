@@ -4,10 +4,16 @@ public class TypeCasting {
 
 
     public static void main(String[] args) {
-        double d = 10.75;
-        int n = (int) d; // double to int (explicit casting)
+        double d = 123.456;
+        float f = (float) d;
+        long l = (long) f;
+        int i = (int) l;
+        short s = (short) i;
+        byte b = (byte) s;
+        int num = 65;
+        char ch = (char) num;
 
-        System.out.println("Double value: " + d);
-        System.out.println("Cast to int: " + n);
+        System.out.println("byte: " + b);
+        System.out.println("int to char: " + ch);
     }
 }
